@@ -20,6 +20,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'learn.views.add', name = 'add'),
-    url(r'^add/(\d+)/(\d+)/$', 'learn.views.add2', name = 'add2')
+    url(r'^add/(\d+)/(\d+)/$', 'learn.views.add2', name = 'add2'),
     url(r'^admin/', include(admin.site.urls))
     )
